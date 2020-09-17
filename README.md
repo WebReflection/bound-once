@@ -6,6 +6,7 @@
 
 A fast, memory efficient, and tiny solution to an evergreen problem.
 
+Alternatively, you can check [bind.for](https://github.com/WebReflection/bind.for#readme) utility, which is definitively faster, but it has not ideal ergonomics.
 
 ## API
 
