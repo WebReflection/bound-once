@@ -6,6 +6,7 @@
 
 A fast, memory efficient, and tiny solution to an evergreen problem.
 
+
 ## API
 
 ```js
@@ -17,6 +18,7 @@ const once = bound(
 
 once();     // will have the right context
 ```
+
 
 ### Usage Example
 
@@ -47,3 +49,5 @@ document.body.addEventListener('click', bound(counter, 'increment'));
 const {increment} = Counter.prototype;
 bound(counter, 'increment') === bound(counter, increment);
 ```
+
+This [Custom Element with closed ShadowDOM](https://codepen.io/WebReflection/pen/qBZMRxy?editors=0010) is also another practical application, avoiding constant listeners changes per each render call.
