@@ -1,0 +1,1 @@
+self.boundOnce=function(t){"use strict";const e=new WeakMap;return t.default=(t,n)=>{const u="function"==typeof n?n:t[n],c=e.get(t)||((t,n)=>(e.set(t,n),n))(t,new Map);return c.get(u)||((t,e,n)=>(t.set(e,n),n))(c,u,u.bind(t))},t}({});

@@ -1,0 +1,1 @@
+self.boundOnce=function(n){"use strict";var t=new WeakMap;return n.default=function(n,e){var u="function"==typeof e?e:n[e],r=t.get(n)||function(n,e){return t.set(n,e),e}(n,new Map);return r.get(u)||function(n,t,e){return n.set(t,e),e}(r,u,u.bind(n))},n}({});
