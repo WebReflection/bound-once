@@ -1,6 +1,6 @@
 {
   "name": "bound-once",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A fast, memory efficient, and tiny solution to an evergreen problem",
   "main": "./cjs/index.js",
   "scripts": {
