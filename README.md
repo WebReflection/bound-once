@@ -50,4 +50,28 @@ const {increment} = Counter.prototype;
 bound(counter, 'increment') === bound(counter, increment);
 ```
 
+### Partial Application
+
+```js
+class Component extends HTMLElement {
+  // instead of assigning N methods bound
+  // just assign once and happily bind it after
+  #bound = bound.bind(null, this);
+  connectedCallback() {
+    this.addEventListener('click', this.#bound('onClick'));
+    this.addEventListener('change', this.#bound('onChange'));
+    this.addEventListener('input', this.#bound(this.onInput));
+  }
+  disconnectedCallback() {
+    this.removeEventListener('click', this.#bound('onClick'));
+    this.removeEventListener('change', this.#bound('onChange'));
+    this.removeEventListener('input', this.#bound(this.onInput));
+  }
+  // any method
+  onClick() {}
+  onChange() {}
+  onInput() {}
+}
+```
+
 This [Custom Element with closed ShadowDOM](https://codepen.io/WebReflection/pen/qBZMRxy?editors=0010) is also another practical application, avoiding constant listeners changes per each render call.

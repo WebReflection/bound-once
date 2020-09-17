@@ -20,8 +20,8 @@ self.boundOnce = (function (exports) {
     return methods.get(method) || set(methods, method, method.bind(context));
   });
 
-  exports.default = index;
+  
 
-  return exports;
+  return index;
 
 }({}));
