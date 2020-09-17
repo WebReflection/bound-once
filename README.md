@@ -1,5 +1,9 @@
 # bound-once
 
+[![Build Status](https://travis-ci.com/WebReflection/bound-once.svg?branch=master)](https://travis-ci.com/WebReflection/bound-once) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/bound-once/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/bound-once?branch=master)
+
+<sup>**Social Media Photo by [Mattias Olsson](https://unsplash.com/@mattiaswolsson) on [Unsplash](https://unsplash.com/)**</sup>
+
 A fast, memory efficient, and tiny solution to an evergreen problem.
 
 ## API
